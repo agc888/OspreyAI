@@ -1,0 +1,268 @@
+@import "../../_globalColor"; // Import global color variables if needed
+
+/* Define CSS Variables for Light and Dark Mode */
+:root {
+  --textColor: grey; /* Default text color */
+  --hoverColor: #222; /* Darker text on hover for light mode */
+  --backColor: rgb(255, 255, 255);/* Default background color (Light mode) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: grey; /* Default text color remains grey */
+    --hoverColor: #ddd; /* Lighter text on hover for dark mode */
+    --backColor: rgb(0, 0, 0); /* Background color for Dark mode */
+  }
+}
+
+/* Header */
+header {
+  color: var(--textColor);
+  padding: 15px 20px;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+  position: relative;
+  font-size: 18px; /* Set font size for the header */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Header Links */
+.header-links {
+  display: flex;
+  align-items: center;
+  min-width: fit-content;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--textColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--hoverColor);
+    font-weight: bolder;
+  }
+}
+
+/* Light mode styles */
+.header {
+  background-color: white;
+  --textColor: grey;
+  --hoverColor: #222;
+  --backColor:  rgb(255, 255, 255);
+}
+.menu {
+  background-color: white;
+}
+
+/* Dark mode styles */
+.dark-menu {
+  background-color: black;
+  --textColor: grey;
+  --hoverColor: #ddd;
+  --backColor: rgb(0, 0, 0);
+}
+.navicon-dark {
+  color: white;
+}
+
+
+
+
+/* Logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .logo-image {
+    height: 80px;
+    width: auto;
+  }
+
+  .logo-name {
+    font-family: "Agustina Regular";
+    font-weight: bold;
+    padding: 0 10px;
+    color: var(--textColor);
+  }
+}
+
+/* Navigation Menu */
+.header .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  text-align: center;
+  transition: max-height 0.3s ease-out;
+
+  li {
+    display: inline-block;
+    padding: 0 15px;
+
+    a {
+      display: block;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: var(--textColor);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--hoverColor);
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+/* Menu Icon (for mobile) */
+.header .menu-icon {
+  cursor: pointer;
+  display: none;
+  padding: 20px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 100;
+  user-select: none;
+
+  .navicon {
+    background: var(--textColor);
+    display: block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+    transition: background 0.3s ease-out;
+
+    &::before,
+    &::after {
+      content: "";
+      background: var(--textColor);
+      display: block;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      transition: all 0.3s ease-out;
+    }
+
+    &::before {
+      top: -6px;
+    }
+
+    &::after {
+      top: 6px;
+    }
+  }
+}
+
+/* Mobile Menu Button */
+.header .menu-btn {
+  display: none;
+
+  &:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  &:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  &:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .menu-btn {
+    display: none; /* Hide the menu button for larger screens */
+  }
+
+  .header .menu {
+    display: flex !important; /* Ensure it reverts to horizontal layout */
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    background: none;
+    max-height: none;
+  }
+
+
+  .header .menu li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .header .menu {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    width: 100%;
+    background: var(--backColor);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
+  }
+
+  .header .menu li {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header .menu-icon {
+    display: block;
+  }
+}
+
+/* Adjustments for larger screens: ensure the menu shows in a row layout */
+@media (min-width: 768px) {
+  .header .menu-btn {
+    display: none; /* Hide the menu button for larger screens */
+  }
+
+  .header .menu {
+    display: flex;
+    flex-direction: row; /* Override to row layout for larger screens */
+    align-items: center
+  }
+
+}
