@@ -10,31 +10,28 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 1000 // Set animation duration as per your animation
+  duration: 3000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: (
-    <img
-      src={require("./assets/images/OspreyAI.png")}// Path to your logo image
-      alt="Logo"
-      style={{ width: "100px", height: "auto" }} // You can adjust the size
-    />
-  ),
+  
   title: (
     <>
-      <span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI</span>
+      <span className="bold-text">OspreyAI: </span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI</span>
     </>
   ),
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+  subTitle:(
+    <>
+    <span className="bold-text">Welcome to OspreyAI </span>— a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a solid foundation in digital pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial and molecular data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — together, we can drive the future of healthcare innovation.
+    </>
+  )
+  ,
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
