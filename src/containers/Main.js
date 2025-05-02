@@ -19,6 +19,10 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+// ... other imports
+import PartnersSection from "./partnersSection/PartnersSection";
+
+
 import "./Main.scss";
 
 const Main = () => {
@@ -52,6 +56,7 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <PartnersSection />
             <Skills />
             <StackProgress />
             <Education />

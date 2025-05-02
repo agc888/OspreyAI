@@ -16,7 +16,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: false // Set to false to use static SVG
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
@@ -48,6 +48,41 @@ const socialMediaLinks = {
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
+
+const partnersSection = {
+  title: "Trusted By",
+  subtitle: "Organizations I've collaborated with",
+  display: true, // Set false to hide this section, defaults to true
+  partners: [
+    {
+      name: "Google",
+      logo: "./assets/images/brand-logos/google.svg", 
+    },
+    {
+      name: "Microsoft",
+      logo: "./assets/images/brand-logos/microsoft.svg",
+    },
+    {
+      name: "Adobe",
+      logo: "./assets/images/brand-logos/adobe.png",
+    },
+    {
+      name: "Airbnb",
+      logo: "./assets/images/brand-logos/airbnb.svg",
+    },
+    {
+      name: "Stripe",
+      logo: "./assets/images/brand-logos/stripe.svg",
+    },
+    {
+      name: "Reddit",
+      logo: "./assets/images/brand-logos/reddit.svg",
+    }
+  ]
+};
+
+
+
 
 // Skills Section
 
@@ -389,6 +424,7 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
+// Don't forget to add the new section to your export
 export {
   illustration,
   greeting,
@@ -407,5 +443,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  partnersSection  // Add this line
 };

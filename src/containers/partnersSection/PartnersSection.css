@@ -1,0 +1,87 @@
+.partners-main-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .partners-header-div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .partners-header {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .partners-subtitle {
+    color: rgb(127, 141, 170); 
+    font-size: 16px;
+    margin: 10px 0 0;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  
+  .carousel-img {
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partner-logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .partner-logo:hover {
+    filter: grayscale(0%);
+  }
+  
+  .reveal-up {
+    animation: reveal-up 0.8s ease-in-out;
+  }
+  
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .partners-header {
+      font-size: 40px;
+    }
+    
+    .carousel-wrapper {
+      gap: 10px;
+    }
+    
+    .carousel-img {
+      width: 120px;
+    }
+  }
