@@ -1,0 +1,196 @@
+.technologies-main-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%; // Ensure it doesn't exceed viewport
+  box-sizing: border-box; // Include padding in width
+  overflow-x: hidden; // Prevent horizontal overflow
+}
+
+.technologies-header-div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.technologies-header {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.technologies-subtitle {
+  font-size: 18px;
+  margin: 10px 0;
+  color: rgb(127, 141, 170);
+}
+
+.tech-logos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.tech-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.active {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+}
+
+.tech-logo-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+}
+
+.tech-logo-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tech-logo-wrapper.active {
+  border-bottom: 3px solid #55198b;
+}
+
+.tech-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.tech-logo-wrapper:hover .tech-logo {
+  filter: grayscale(0%);
+}
+
+.tech-details-container {
+  width: 100%;
+  max-width: 100%; // Ensure it doesn't exceed parent
+  position: relative;
+  margin-top: 30px;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+.tech-details {
+  display: none;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tech-details.active {
+  display: flex;
+  opacity: 1;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; // Reduced gap to prevent overflow
+  flex-wrap: wrap; // Allow wrapping if needed
+}
+
+.tech-image-container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.tech-detail-image {
+  max-width: 100%; // Changed from width: 100% to prevent stretching
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tech-description {
+  flex: 0 0 40%;
+  max-width: 40%;
+  box-sizing: border-box;
+}
+
+.tech-description h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #55198b;
+}
+
+.tech-description p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.platform-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 5px 0;
+}
+
+.platform-logo {
+  max-width: 200px;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .tech-details.active {
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: nowrap; // Prevent wrapping in column layout
+  }
+  
+  .tech-image-container,
+  .tech-description {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .platform-logos-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .technologies-main-div {
+    padding: 20px 10px;
+    margin: 40px 0;
+  }
+
+  .technologies-header {
+    font-size: 36px;
+  }
+
+  .technologies-subtitle {
+    font-size: 16px;
+  }
+
+  .platform-logo {
+    max-width: 40px;
+    max-height: 15px;
+  }
+
+  .platform-logos-container {
+    gap: 8px;
+  }
+}
