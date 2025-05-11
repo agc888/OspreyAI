@@ -3,6 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
@@ -20,18 +21,16 @@ const illustration = {
 };
 
 const greeting = {
-  
   title: (
     <>
       <span className="bold-text">OspreyAI: </span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI</span>
     </>
   ),
-  subTitle:(
+  subTitle: (
     <>
-    <span className="bold-text">Welcome to OspreyAI </span>— a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a solid foundation in digital pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial and molecular data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — together, we can drive the future of healthcare innovation.
+    <span className="bold-text">Welcome to OspreyAI </span>— a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a strong foundation in clinical pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial, molecular and histological imaging data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — <span className="bold-text"> together, we can drive the future of healthcare innovation.</span>
     </>
-  )
-  ,
+  ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -50,86 +49,184 @@ const socialMediaLinks = {
 };
 
 const partnersSection = {
+  display: true, // Set to true to display this section
   title: "Trusted By",
-  subtitle: "Organizations I've collaborated with",
-  display: true, // Set false to hide this section, defaults to true
+  subtitle: "Organizations I've worked for and collaborated with",
   partners: [
     {
-      name: "Google",
-      logo: "./assets/images/brand-logos/google.svg", 
+      name: "Sullivan Nicolaides Pathology",
+      logo: require("./assets/images/brand-logos/snp.png"),
     },
     {
-      name: "Microsoft",
-      logo: "./assets/images/brand-logos/microsoft.svg",
+      name: "Pfizer",
+      logo: require("./assets/images/brand-logos/Pfizer.png"),
     },
     {
-      name: "Adobe",
-      logo: "./assets/images/brand-logos/adobe.png",
+      name: "10x Genomics",
+      logo: require("./assets/images/brand-logos/10x_logo.png"),
     },
     {
-      name: "Airbnb",
-      logo: "./assets/images/brand-logos/airbnb.svg",
+      name: "Max Kelsen",
+      lightLogo: require("./assets/images/brand-logos/MK.png"),
+      darkLogo: require("./assets/images/brand-logos/MK_dark.png")
     },
     {
-      name: "Stripe",
-      logo: "./assets/images/brand-logos/stripe.svg",
+      name: "University of Queensland",
+      logo: require("./assets/images/brand-logos/UQ.png"),
     },
     {
-      name: "Reddit",
-      logo: "./assets/images/brand-logos/reddit.svg",
+      name: "QIMR Berghofer",
+      lightLogo: require("./assets/images/brand-logos/QIMRB.png"),
+      darkLogo: require("./assets/images/brand-logos/QIMRB_dark.png")
+    },
+    {
+      name: "Genomics Machine Learning Group",
+      lightLogo: require("./assets/images/brand-logos/GML_light.png"),
+      darkLogo: require("./assets/images/brand-logos/GML_dark.png")
     }
   ]
 };
 
+const pipelineSection = {   
+  title: "The Pipeline",   
+  display: true,
+  subtitle: "From sample to insights: How I transform spatial and other Omics data into actionable knowledge",   
+  image: require("./assets/images/skill-logos/tools.png"), 
+  description: ( "test" )   
+};
 
 
+
+const technologiesSection = {
+  display: true, // Set to true to display this section
+  title: "Technologies",
+  subtitle: "Cutting-edge technologies I work with",
+  technologies: [
+    {
+      name: "Single-cell RNA-seq",
+      image: require("./assets/images/skill-logos/scRNA.png"),
+      description: "Single-cell RNA sequencing allows for the profiling of gene expression at the individual cell level, revealing cellular heterogeneity and rare cell populations that would be masked in bulk sequencing approaches. This technology enables the discovery of new cell types, mapping of cellular differentiation trajectories, and understanding of complex tissue microenvironments.",
+      platforms: ["10X Genomics"] // Only 10X Genomics logo
+    },
+    {
+      name: "Whole Transcriptome Spatial Transcriptomics",
+      image: require("./assets/images/skill-logos/spotST.png"),
+      description: "Whole Transcriptome Spatial Transcriptomics (ST) provides comprehensive gene expression profiling while preserving spatial context within tissue samples. This technology captures the entire transcriptome at near-cellular resolution, enabling the visualization of complex spatial gene expression patterns and identification of region-specific molecular signatures in tissues.",
+      platforms: ["10X Genomics","STOmics"] // No logos (can be updated if needed)
+    },
+    {
+      name: "Single-cell Spatial Transcriptomics",
+      image: require("./assets/images/skill-logos/scST.png"),
+      description: "Single-cell Spatial Transcriptomics combines the resolution of single-cell RNA sequencing with spatial information, allowing researchers to map gene expression at the individual cell level within the tissue architecture. This powerful approach bridges the gap between traditional histology and genomics, providing unprecedented insights into cellular organization, cell-cell interactions, and tissue microenvironments.",
+      platforms: ["10X Genomics", "NanoString","Bruker"] // 10X Genomics and NanoString logos
+    },
+    {
+      name: "Single-Cell Spatial Proteomics",
+      image: require("./assets/images/skill-logos/Codex.png"),
+      description: "Spatial Proteomics technologies enable the visualization and quantification of proteins while preserving spatial context within tissue samples. Using multiplexed immunofluorescence and advanced imaging techniques, these platforms can simultaneously detect dozens of protein markers at subcellular resolution, providing deep insights into cell phenotypes, signaling networks, and protein-protein interactions within their native tissue environment.",
+      platforms: ["Akoya Biosciences"] // No logos (can be updated if needed)
+    },
+    {
+      name: "Spatial Metabolomics",
+      image: require("./assets/images/skill-logos/sm.png"),
+      description: "Spatial Metabolomics combines advanced mass spectrometry with imaging techniques to map metabolites directly within tissue sections. This technology provides insights into metabolic heterogeneity across tissues, revealing how metabolic processes are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.",
+      platforms: ["Bruker"] // No logos (can be updated if needed)
+    },
+    {
+      name: "Other Biological Datasets",
+      image: require("./assets/images/skill-logos/other.png"),
+      description: "Beyond standard omics approaches, I work with diverse biological datasets including digital pathology images, clinical data, electronic health records, and other multi-modal data types. Integrating these heterogeneous data sources enables more comprehensive analysis of biological systems and disease mechanisms, leading to deeper insights and more robust predictive models for precision medicine applications.",
+      platforms: ["Illumina","Oxford Nanopore"] // No logos (can be updated if needed)
+    }
+  ],
+  platformsSection: {
+    title: "Spatial Biology Platforms",
+    platforms: [
+      {
+        name: "10X Genomics",
+        lightLogo: require("./assets/images/brand-logos/10x_logo.png"),
+        darkLogo: require("./assets/images/brand-logos/10x_logo.png")
+      },
+      {
+        name: "Akoya Biosciences",
+        lightLogo: require("./assets/images/brand-logos/Akoya.png"),
+        darkLogo: require("./assets/images/brand-logos/Akoya_dark.png")
+      },
+      {
+        name: "NanoString",
+        lightLogo: require("./assets/images/brand-logos/nanostring.png"),
+        darkLogo: require("./assets/images/brand-logos/nanostring.png")
+      },
+      {
+        name: "STOmics",
+        lightLogo: require("./assets/images/brand-logos/stomics.png"),
+        darkLogo: require("./assets/images/brand-logos/stomics.png")
+      },
+      {
+        name: "Bruker",
+        lightLogo: require("./assets/images/brand-logos/bruker_light.png"),
+        darkLogo: require("./assets/images/brand-logos/bruker_dark.png")
+      },
+      {
+        name: "Illumina",
+        lightLogo: require("./assets/images/brand-logos/Illumina_light.png"),
+        darkLogo: require("./assets/images/brand-logos/Illumina_dark.png")
+      },
+      {
+        name: "Oxford Nanopore",
+        lightLogo: require("./assets/images/brand-logos/oxford_light.png"),
+        darkLogo: require("./assets/images/brand-logos/oxford_dark.png")
+      }
+    ]
+  }
+};
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Key Skills and Expertise",
+  subTitle: "In addition to almost 10 years experience within the biomedical science field, I have a strong background in bioinformatic analyses, software development and other data science tools such as:",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop novel and innovative algorithms/software for spatial omics and digital pathology"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Implement and deploy machine learning models for integrating and analysing spatial omics and biological imaging datasets"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Proficient in repository management and version control, highperformance computing, and cloud computing"
     )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
+    {
+      skillName: "R",
+      fontAwesomeClassname: "fab fa-r-project"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Terminal",
+      fontAwesomeClassname: "fas fa-terminal"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Adobe Creative Suite",
+      fontAwesomeClassname: "fas fa-cloud"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
     },
     {
       skillName: "npm",
@@ -144,16 +241,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "google cloud",
+      fontAwesomeClassname: "fab fa-google"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "ML Models",
+      fontAwesomeClassname: "fas fa-network-wired"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Data Analysis",
+      fontAwesomeClassname: "far fa-chart-bar"
+    },
+    {
+      skillName: "Digital Pathology",
+      fontAwesomeClassname: "fas fa-microscope"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -165,23 +266,29 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Queensland ",
+      logo: require("./assets/images/UQ.png"),
+      subHeader: "Master of Bioinfomatics (Research Extensive)",
+      duration: "Jan 2021 - Nov 2022",
+      desc: "Developed computational skills and critical biological data analysis skiils.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "GPA: 6.94/7.0",
+        "Publication in Nature Precision Oncology IF: 7.9 (2022)",
+        "Thesis project involves the integration of multiomics datasets (Spatial Transcriptomics, Spatial Proteomics) from human head and neck cancer patients in-order to distinguish heterogeneity between patients to assess statistical performance of multiomics integration, and identify drug targets for immunotherapies",
+        "Presented at the CellOmics Innovation Forum and the MultiOmics 2022 Conference"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "University of Queensland ",
+      logo: require("./assets/images/UQ.png"),
+      subHeader: "Bachelor of Science (First Class Honours)",
+      duration: "Jan 2016 - Nov 2019",
+      desc: "Specialised in Biomedical Science specifically in the fields of Pathophysiology, Neuroscience, Developmental Biology.",
+      descBullets: [
+        "GPA: 6.33/7.0",
+        "Honours Project: Developing a clinically relevant mouse model of high-level spinal cord injury to study circadian metabolism and immune dysfunction",
+        "Third year developmental biology prize (2019)"
+      ]
     }
   ]
 };
@@ -192,16 +299,24 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Spatial Omics/Biological 'Big' Data analysis",
+      progressPercentage: "100%"
     },
     {
-      Stack: "Backend",
+      Stack: "Machine Learnign/Digital Pathology",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Clinical Pathology Laboratory",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "Project Managment",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "Publication/Grant Submissions",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -263,7 +378,6 @@ const bigProjects = {
           name: "Visit Website",
           url: "http://saayahealth.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
@@ -288,7 +402,6 @@ const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
   achievementsCards: [
     {
       title: "Google Code-In Finalist",
@@ -324,7 +437,6 @@ const achievementSection = {
         }
       ]
     },
-
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
@@ -373,7 +485,6 @@ const talkSection = {
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
-
   talks: [
     {
       title: "Build Actions For Google Assistant",
@@ -390,8 +501,6 @@ const talkSection = {
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
@@ -402,8 +511,6 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -444,5 +551,7 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  partnersSection  // Add this line
+  partnersSection,
+  technologiesSection,
+  pipelineSection
 };
