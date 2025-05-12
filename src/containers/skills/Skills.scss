@@ -23,7 +23,12 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  line-height: 1.3; /* Add proper line height */
+  word-wrap: break-word; /* Allow long words to break */
+  overflow-wrap: break-word; /* Modern version of word-wrap */
+  margin-bottom: 20px; /* Add some bottom margin */
 }
+
 .subTitle {
   color: $subTitle;
 }
@@ -34,6 +39,7 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
@@ -60,5 +66,13 @@
   .skills-image-div {
     /* display: none; */
     order: 2;
+  }
+}
+
+/* Add extra media query for extra small screens */
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 24px; /* Even smaller font for very small screens */
+    line-height: 1.2;
   }
 }

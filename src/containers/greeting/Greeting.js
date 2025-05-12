@@ -42,7 +42,7 @@ export default function Greeting() {
             />
             <img
               className="after-image"
-              src={require("../../assets/images/imm.png")}
+              src={require("../../assets/images/immuno.png")}
               alt="After"
             />
 

@@ -76,6 +76,7 @@
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+  text-align: left;
 }
 
 /* Media Query */
@@ -108,6 +109,10 @@
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
+}
+.bullet-points{
+    color: $subTitle !important;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
