@@ -91,8 +91,24 @@ const pipelineSection = {
   title: "The Pipeline",   
   display: true,
   subtitle: "From sample to insights: How I transform spatial and other Omics data into actionable knowledge",   
-  image: require("./assets/images/skill-logos/tools.png"), 
-  description: ( "test" )   
+  lightLogo: require("./assets/images/skill-logos/pipeline_light.png"), 
+  darkLogo: require("./assets/images/skill-logos/pipeline_dark.png"), 
+  lightAnimatedSvg: require("./assets/lottie/pipeline_animation_light.json"), // Lottie JSON for light mode
+  darkAnimatedSvg: require("./assets/lottie/pipeline_animation_dark.json"), // Lottie JSON for dark mode
+  beforeDescription: (
+    <>
+      <p>
+      Following this standard bioinformatic pipeline, we can implment downstream methods and tools to uncover a deeper understand of biology. These are just some of the many different analyses and packages I have used for analysing all types of biological data.
+      </p>
+    </>
+  ),
+  afterDescription: (
+    <>
+      <p>
+      Often there are analyses specific to the technology type or platform being used. Some of the most common and novel techniques I have previously implment are listed below in the 'Technolgies Section'.    
+      </p>
+    </>
+  )
 };
 
 
@@ -367,27 +383,27 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some key milestones and projects i have been involved with",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/spamtp.png"),
+      projectName: "SpaMTP R Package",
+      projectDesc: "Learn more about our Spatial Metabolomics, Transcriptomics and Proteomics Integration Package here:",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://genomicsmachinelearning.github.io/SpaMTP/"
         }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/hnc.webp"),
+      projectName: "Nature Precision Oncology",
+      projectDesc: "Deep spatial-omics analysis of Head & Neck carcinomas provides alternative therapeutic targets and rationale for treatment failure.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Article",
+          url: "https://www.nature.com/articles/s41698-023-00444-2"
         }
       ]
     }

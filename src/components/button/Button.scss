@@ -7,13 +7,13 @@
   font-weight: 700;
   width: max-content;
   padding: 13px 22px;
-  margin-right: 50px;
+  margin-right: 0;
+  margin: 0;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -27,7 +27,6 @@
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 .project-button > .main-button {
   margin-right: 0 !important;
