@@ -111,8 +111,6 @@ const pipelineSection = {
   )
 };
 
-
-
 const technologiesSection = {
   display: true, // Set to true to display this section
   title: "Technologies",
@@ -121,38 +119,64 @@ const technologiesSection = {
     {
       name: "Single-cell RNA-seq",
       image: require("./assets/images/skill-logos/scRNA.png"),
-      description: "Single-cell RNA sequencing allows for the profiling of gene expression at the individual cell level, revealing cellular heterogeneity and rare cell populations that would be masked in bulk sequencing approaches. This technology enables the discovery of new cell types, mapping of cellular differentiation trajectories, and understanding of complex tissue microenvironments.",
+      description: "Single-cell RNA sequencing allows for the profiling of gene expression at the individual cell level, revealing cellular heterogeneity and rare cell populations that would be masked in bulk sequencing approaches. This technology enables the discovery of new cell types, mapping of cellular differentiation trajectories, and understanding of complex tissue microenvironments. Data generated from this analysis is generally in the form of a large sparse counts matrix which must be heavily scrutinised to ensure all technical variation is removed. In addition to the standard bioinformatics pipeline mentioned above, some of the key analyses I always perform when analysing scRNA-seq include:",
+      bulletPoints:[
+        "Doublet Removal",
+        "Robust Cell Tying",
+        "Trajectory Analysis",
+        "Pathway Enrichment Analysis",
+        "Infered Copy Number Variations"
+      ],
       platforms: ["10X Genomics"] // Only 10X Genomics logo
     },
     {
       name: "Whole Transcriptome Spatial Transcriptomics",
       image: require("./assets/images/skill-logos/spotST.png"),
-      description: "Whole Transcriptome Spatial Transcriptomics (ST) provides comprehensive gene expression profiling while preserving spatial context within tissue samples. This technology captures the entire transcriptome at near-cellular resolution, enabling the visualization of complex spatial gene expression patterns and identification of region-specific molecular signatures in tissues.",
+      description: "Whole Transcriptome Spatial Transcriptomics (ST) provides comprehensive gene expression profiling while preserving spatial context within tissue samples. This technology captures the entire transcriptome at near-cellular resolution (spot level: ~2-10 cells), enabling the visualisation of complex spatial gene expression patterns and identification of region-specific molecular signatures in tissues. This data often produces a counts matrix where each barcoded spot contains spatial coordinates. Compared to scRNA-seq data, the ST data structure contains it’s own set of challenges when ensuring high quality data. With the addition of spatial coordinates there various analyses we can perform to extract deeper information about tissue microenvironments. Some of my favourites include:",
+      bulletPoints:[
+        "Deconvolution",
+        "Cell-Cell Interaction",
+        "Spatial Feature Correlation",
+        "Spatial Trajectory Analysis"
+      ],
       platforms: ["10X Genomics","STOmics"] // No logos (can be updated if needed)
     },
     {
       name: "Single-cell Spatial Transcriptomics",
       image: require("./assets/images/skill-logos/scST.png"),
-      description: "Single-cell Spatial Transcriptomics combines the resolution of single-cell RNA sequencing with spatial information, allowing researchers to map gene expression at the individual cell level within the tissue architecture. This powerful approach bridges the gap between traditional histology and genomics, providing unprecedented insights into cellular organization, cell-cell interactions, and tissue microenvironments.",
+      description: "Single-cell Spatial Transcriptomics combines the resolution of single-cell RNA sequencing with spatial information, allowing researchers to map gene expression at the individual cell level within the tissue architecture. This powerful approach bridges the gap between traditional histology and genomics, providing unprecedented insights into cellular organisation, cell-cell interactions, and tissue microenvironments. Although this data contains fewer genes compared to spot level ST datasets, they are often much larger consisting of over 100,000 cells. With this brings new methods to leverage such data including:",
+      bulletPoints:[
+        "Cell Label Transfer",
+        "Neighbourhood Niche Analysis"
+      ],
       platforms: ["10X Genomics", "NanoString","Bruker"] // 10X Genomics and NanoString logos
     },
     {
       name: "Single-Cell Spatial Proteomics",
       image: require("./assets/images/skill-logos/Codex.png"),
-      description: "Spatial Proteomics technologies enable the visualization and quantification of proteins while preserving spatial context within tissue samples. Using multiplexed immunofluorescence and advanced imaging techniques, these platforms can simultaneously detect dozens of protein markers at subcellular resolution, providing deep insights into cell phenotypes, signaling networks, and protein-protein interactions within their native tissue environment.",
+      description: "Spatial Proteomics technologies enable the visualisation and quantification of proteins while preserving spatial context within tissue samples. Using multiplexed immunofluorescence and advanced imaging techniques, these platforms can simultaneously detect dozens of protein markers at subcellular resolution, providing deep insights into cell phenotypes, signaling networks, and protein-protein interactions within their native tissue environment. This generated data is distinctly different from most spatial transcriptomics datasets, and with this requires optimised methods for extracting biological information. Some of these include:",
+      bulletPoints:[
+        "Geometric Mean Based Cell Typing",
+        "Protein-Protien Interaction Analysis",
+        "Differential Intensity Analysis"
+      ],
       platforms: ["Akoya Biosciences"] // No logos (can be updated if needed)
     },
     {
       name: "Spatial Metabolomics",
       image: require("./assets/images/skill-logos/sm.png"),
-      description: "Spatial Metabolomics combines advanced mass spectrometry with imaging techniques to map metabolites directly within tissue sections. This technology provides insights into metabolic heterogeneity across tissues, revealing how metabolic processes are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.",
+      description: "Spatial Metabolomics combines advanced mass spectrometry with imaging techniques to map metabolites directly within tissue sections. This technology provides insights into metabolic heterogeneity across tissues, revealing how metabolic processes are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.These datasets contain huge levels of data and require specialised packages to handle this. These packages contain analyses such as:",
+      bulletPoints:[
+        "Metabolite Annotation",
+        "Shrunken Spatial Centroid Analysis",
+        "Metabolic Pathway Analysis"
+      ],
       platforms: ["Bruker"] // No logos (can be updated if needed)
     },
     {
       name: "Other Biological Datasets",
       image: require("./assets/images/skill-logos/other.png"),
-      description: "Beyond standard omics approaches, I work with diverse biological datasets including digital pathology images, clinical data, electronic health records, and other multi-modal data types. Integrating these heterogeneous data sources enables more comprehensive analysis of biological systems and disease mechanisms, leading to deeper insights and more robust predictive models for precision medicine applications.",
-      platforms: ["Illumina","Oxford Nanopore"] // No logos (can be updated if needed)
+      description: "Beyond standard omics approaches, I work with diverse biological datasets including digital pathology images, clinical data, Bulk-Omics, and other multi-modal data types. Integrating these heterogeneous data sources enables more comprehensive analysis of biological systems and disease mechanisms, leading to deeper insights and more robust predictive models for precision medicine applications.",
     }
   ],
   platformsSection: {
@@ -196,8 +220,6 @@ const technologiesSection = {
     ]
   }
 };
-
-// Skills Section
 
 const skillsSection = {
   title: "Key Skills and Expertise",
@@ -319,16 +341,16 @@ const techStack = {
       progressPercentage: "100%"
     },
     {
-      Stack: "Machine Learnign/Digital Pathology",
-      progressPercentage: "80%"
-    },
-    {
       Stack: "Clinical Pathology Laboratory",
       progressPercentage: "100%"
     },
     {
       Stack: "Project Managment",
       progressPercentage: "100%"
+    },
+    {
+      Stack: "Machine Learnign/Digital Pathology",
+      progressPercentage: "80%"
     },
     {
       Stack: "Publication/Grant Submissions",
@@ -344,30 +366,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Bioinformatician",
+      company: "University of Queensland",
+      companylogo: require("./assets/images/UQ.png"),
+      date: "Aug 2023 – Present",
+      desc: "Leveraging spatial-omic technologies and deep learning methodologies to analyse various complex diseases, including unravelling intricate biological mechanisms associated with diverse tumour micro-environments",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Strong background in research projects (start-to-end) involing all major spatial omics technolgies",
+        "Project managment with major industry partners including Sullivan Nicolaides Pathology and Pfizer",
+        "Mentoring and managing staff including PhD/Honours students and external collaborators",
+        "Numerous oral and poster presentations at conferences including the Brisbane Cancer Conference, Multi-Omics and 10X User Meeting"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Clinical Laboratory Scientist",
+      company: "Sullivan Nicolaides Pathology",
+      companylogo: require("./assets/images/snp.png"),
+      date: "Jan 2021 – March 2023",
+      desc: "Performed routine histology on thousands of patient samples",
+      descBullets: [
+        "Key clinical histolgoy skills such as embedding, microtomy and H&E staining",
+        "Handled a diverse range of complex human specimen",
+        "Performed efficiently to produce high quality outputs in high pace work environment"
+      ] 
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Machine Learning Researcher",
+      company: "Max Kelsen",
+      companylogo: require("./assets/images/MK.png"),
+      date: "March 2023 – May 2023",
+      desc: "Implemented various machine learning techniques on cancer clinical trail datasets.",
+      descBullets: [
+        "Developed skills in manipulating machine learning models to apply to medical datasets",
+        "Familar with cloud computing platfroms such as Google"
+      ]
+
+     }
   ]
 };
 
@@ -417,58 +451,55 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
+    "Some Cool Stuff that I have done!",
+
+    achievementsCards: [
+      {
+        title: "Presenting My Work",
+        subtitle:
+          "I've been fortunate enough to present at various inter-institution, national and global conferences. These include the Brisbane Cancer Conference, Multi-Omics and 10X User Group Meetings.",
+        image: require("./assets/images/multiomics.png"),
+        imageAlt: "Multi-Omics",
+        footerLink: [
+          {
+            name: "Multi-Omics Poster",
+            url: require("./assets/documents/Poster.pdf"),
+            isDownloadable: true,
+            downloadName: "Andrew_Causer_Poster.pdf"
+          }
+        ]
+      },
+      {
+        title: "Leading Workshops and Tutorials",
+        subtitle:
+        "I have had experience leading workshops and tutorials for staff and students at both the Queensland Institute of Medical Research Berghofer and the University of Queensland",
+        image: require("./assets/images/brand-logos/Combined.png"),
+        imageAlt: "QIMR logo",
+        footerLink: [
+          {
+            name: "Tutorial",
+            url: "/documents/Tutorial.html",
+            isDownloadable: true,
+            downloadName: "Andrew_Causer_Tutorial.html"
+          }
+        ]
+      },
+      {
+        title: "Deep Learning Specialisation Certification",
+        subtitle: "Completed certifcation from DeepLearning.AI in convolutional neural networks and deep learning",
+        image: require("./assets/images/deeplearning.webp"),
+        imageAlt: "DeepLearning.AI logo",
+        footerLink: [
+          {
+            name: "Certification",
+            url: "https://www.linkedin.com/posts/andrewgcauser_i-just-completed-the-deep-learning-specialisation-activity-7092829776746332160-qqX5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIdu2sBj4D0inKNirpNHO94pyD2kAW3tgc" // External link
+          }
+        ]
+      
+      }
+    ],
+    display: true // Set false to hide this section, defaults to true
+  };
 
 // Blogs Section
 
@@ -533,9 +564,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in learning more? Please reach out using Linkdin or my email below",
+  number: "0000000000",
+  email_address: "cause.ag@gmail.com"
 };
 
 // Twitter Section

@@ -73,12 +73,12 @@ const Main = () => {
             <PipelineSection />
             <TechnologiesSection />
             <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
             <StartupProject />
+            <Projects />
+            <WorkExperience />
             <Achievement />
+            <Education />
+            <StackProgress />
             <Profile />
             <Footer />
             <ScrollToTopButton />

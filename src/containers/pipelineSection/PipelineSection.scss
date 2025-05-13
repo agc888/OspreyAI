@@ -64,3 +64,39 @@
   text-align: center;
   max-width: 800px; /* Match the width of the visuals for consistency */
 }
+
+@media (max-width: 768px) {
+  .pipeline-main-div {
+    padding: 15px; /* Slightly reduce padding for smaller screens */
+  }
+
+  .pipeline-visuals {
+    flex-direction: column; /* Stack image and SVG vertically */
+    gap: 30px; /* Reduce gap between stacked elements */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .pipeline-image-container {
+    width: 100%; /* Ensure image takes full width */
+    text-align: center; /* Center image if needed */
+  }
+
+  .pipeline-animated-svg {
+    width: 100%; /* Ensure SVG takes full width */
+    max-width: 400px; /* Optional: limit SVG width for better scaling */
+  }
+
+  .pipeline-before-description,
+  .pipeline-after-description {
+    max-width: 100%; /* Allow descriptions to take full width */
+    padding: 0 10px; /* Add small padding for better readability */
+  }
+
+  .pipeline-header {
+    font-size: 2rem; /* Slightly smaller header for mobile */
+  }
+
+  .pipeline-subtitle {
+    font-size: 1rem; /* Slightly smaller subtitle for mobile */
+  }
+}

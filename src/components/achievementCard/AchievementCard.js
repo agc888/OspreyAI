@@ -2,13 +2,16 @@ import React from "react";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
-  function openUrlInNewTab(url, name) {
-    if (!url) {
-      console.log(`URL for ${name} not found`);
-      return;
+  function handleLinkAction(v) {
+    // If not downloadable and external URL, open in new tab
+    if (!v.isDownloadable && v.url.startsWith('http')) {
+      const win = window.open(v.url, "_blank");
+      win.focus();
+    } else if (!v.isDownloadable) {
+      // For non-downloadable internal links
+      window.open(v.url, "_blank");
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    // For downloadable links, the <a> tag with download attribute handles it
   }
 
   return (
@@ -16,7 +19,7 @@ export default function AchievementCard({cardInfo, isDark}) {
       <div className="certificate-image-div">
         <img
           src={cardInfo.image}
-          alt={cardInfo.imageAlt || "Card Thumbnail"}
+          alt={cardInfo.imageAlt || "Card Image"}
           className="card-image"
         ></img>
       </div>
@@ -30,13 +33,20 @@ export default function AchievementCard({cardInfo, isDark}) {
       </div>
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
-          return (
+          return v.isDownloadable ? (
+            <a
+              key={i}
+              className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+              href={v.url}
+              download={v.downloadName || "certificate"}
+            >
+              {v.name}
+            </a>
+          ) : (
             <span
               key={i}
-              className={
-                isDark ? "dark-mode certificate-tag" : "certificate-tag"
-              }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+              onClick={() => handleLinkAction(v)}
             >
               {v.name}
             </span>

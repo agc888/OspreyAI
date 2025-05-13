@@ -13,7 +13,7 @@ export default function PipelineSection() {
     if (lottieRef.current) {
       lottieRef.current.setSpeed(0.3); // Set speed programmatically
     }
-  }, []);
+  }, [isDark]); // Add isDark as a dependency to re-run when theme changes
 
   if (!pipelineSection.display) {
     return null;
