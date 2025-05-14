@@ -2,7 +2,8 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
-import emailjs from "@emailjs/browser"; // Import EmailJS
+import emailjs from '@emailjs/browser';
+
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
@@ -59,10 +60,10 @@ export default function Profile() {
     // EmailJS send function
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
+        "service_w65g7wq", // Replace with your EmailJS Service ID
         "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
         formData,
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
+        "IwhMhlhXR9CO-GRsS" // Replace with your EmailJS Public Key
       )
       .then(
         () => {

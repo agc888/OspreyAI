@@ -16,7 +16,7 @@ export default function Footer() {
           Theme modified from{" "}
           <a
             href="https://github.com/saadpasta/developerFolio"
-            target="_blank"
+            target=""
             rel="noreferrer"
           >
             developerFolio

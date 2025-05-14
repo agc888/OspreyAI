@@ -3,6 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import React from 'react';
 
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -562,10 +563,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Get in Touch ☎️"),
   subtitle:
     "Interested in learning more? Please reach out using Linkdin or my email below",
-  number: "0000000000",
   email_address: "cause.ag@gmail.com"
 };
 
