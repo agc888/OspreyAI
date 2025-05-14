@@ -55,11 +55,11 @@
 
 /* For dark mode compatibility */
 .dark-mode .carousel-container::before {
-  background: linear-gradient(to right, rgba(25, 25, 31, 1), rgba(25, 25, 31, 0));
+  background: linear-gradient(to right, rgb(0 0 0), rgb(25 25 31 / 0%));
 }
 
 .dark-mode .carousel-container::after {
-  background: linear-gradient(to left, rgba(25, 25, 31, 1), rgba(25, 25, 31, 0));
+  background: linear-gradient(to left, rgb(0 0 0), rgb(25 25 31 / 0%));
 }
 
 .carousel-wrapper {

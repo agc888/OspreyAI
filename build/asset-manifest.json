@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/OspreyAI/static/css/main.f785d234.chunk.css",
-    "main.js": "/OspreyAI/static/js/main.1072232d.chunk.js",
-    "main.js.map": "/OspreyAI/static/js/main.1072232d.chunk.js.map",
-    "runtime-main.js": "/OspreyAI/static/js/runtime-main.4f890310.js",
-    "runtime-main.js.map": "/OspreyAI/static/js/runtime-main.4f890310.js.map",
-    "static/js/2.4465542a.chunk.js": "/OspreyAI/static/js/2.4465542a.chunk.js",
-    "static/js/2.4465542a.chunk.js.map": "/OspreyAI/static/js/2.4465542a.chunk.js.map",
+    "main.css": "/OspreyAI/static/css/main.e9c2d2d2.chunk.css",
+    "main.js": "/OspreyAI/static/js/main.edc23e5d.chunk.js",
+    "main.js.map": "/OspreyAI/static/js/main.edc23e5d.chunk.js.map",
+    "runtime-main.js": "/OspreyAI/static/js/runtime-main.42af1342.js",
+    "runtime-main.js.map": "/OspreyAI/static/js/runtime-main.42af1342.js.map",
+    "static/js/2.286aeb3f.chunk.js": "/OspreyAI/static/js/2.286aeb3f.chunk.js",
+    "static/js/2.286aeb3f.chunk.js.map": "/OspreyAI/static/js/2.286aeb3f.chunk.js.map",
     "static/css/3.35bdca5f.chunk.css": "/OspreyAI/static/css/3.35bdca5f.chunk.css",
-    "static/js/3.4d664965.chunk.js": "/OspreyAI/static/js/3.4d664965.chunk.js",
-    "static/js/3.4d664965.chunk.js.map": "/OspreyAI/static/js/3.4d664965.chunk.js.map",
+    "static/js/3.3300ab8c.chunk.js": "/OspreyAI/static/js/3.3300ab8c.chunk.js",
+    "static/js/3.3300ab8c.chunk.js.map": "/OspreyAI/static/js/3.3300ab8c.chunk.js.map",
     "static/css/4.c49d51cd.chunk.css": "/OspreyAI/static/css/4.c49d51cd.chunk.css",
     "static/js/4.793a7b6e.chunk.js": "/OspreyAI/static/js/4.793a7b6e.chunk.js",
     "static/js/4.793a7b6e.chunk.js.map": "/OspreyAI/static/js/4.793a7b6e.chunk.js.map",
     "index.html": "/OspreyAI/index.html",
-    "precache-manifest.f0d23013782a241bd12ca827d763a2d5.js": "/OspreyAI/precache-manifest.f0d23013782a241bd12ca827d763a2d5.js",
+    "precache-manifest.ccd50c63170bddb64aeeb028563d2eb2.js": "/OspreyAI/precache-manifest.ccd50c63170bddb64aeeb028563d2eb2.js",
     "service-worker.js": "/OspreyAI/service-worker.js",
     "static/css/3.35bdca5f.chunk.css.map": "/OspreyAI/static/css/3.35bdca5f.chunk.css.map",
     "static/css/4.c49d51cd.chunk.css.map": "/OspreyAI/static/css/4.c49d51cd.chunk.css.map",
-    "static/css/main.f785d234.chunk.css.map": "/OspreyAI/static/css/main.f785d234.chunk.css.map",
-    "static/js/2.4465542a.chunk.js.LICENSE.txt": "/OspreyAI/static/js/2.4465542a.chunk.js.LICENSE.txt",
+    "static/css/main.e9c2d2d2.chunk.css.map": "/OspreyAI/static/css/main.e9c2d2d2.chunk.css.map",
+    "static/js/2.286aeb3f.chunk.js.LICENSE.txt": "/OspreyAI/static/js/2.286aeb3f.chunk.js.LICENSE.txt",
     "static/media/10674804.png": "/OspreyAI/static/media/10674804.7ef1529c.png",
     "static/media/10x_logo.png": "/OspreyAI/static/media/10x_logo.860b3c09.png",
     "static/media/index.css": "/OspreyAI/static/media/Montserrat-Regular.ee653992.ttf",
@@ -65,9 +65,9 @@
     "static/media/stomics.png": "/OspreyAI/static/media/stomics.98573f8c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f890310.js",
-    "static/js/2.4465542a.chunk.js",
-    "static/css/main.f785d234.chunk.css",
-    "static/js/main.1072232d.chunk.js"
+    "static/js/runtime-main.42af1342.js",
+    "static/js/2.286aeb3f.chunk.js",
+    "static/css/main.e9c2d2d2.chunk.css",
+    "static/js/main.edc23e5d.chunk.js"
   ]
 }

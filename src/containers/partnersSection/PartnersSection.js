@@ -50,7 +50,7 @@ export default function PartnersSection() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="partners">
+      <div className="main" id="partners" >
         <div className="partners-main-div">
           <div className="partners-header-div">
             <h1 className="partners-header">{partnersSection.title}</h1>
