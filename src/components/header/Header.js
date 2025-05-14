@@ -3,24 +3,26 @@ import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
+  partnersSection,
+  pipelineSection,
   workExperiences,
+  technologiesSection,
   skillsSection,
-  openSource,
-  // blogSection,
-  // talkSection,
+  bigProjects,
   achievementSection,
-  resumeSection
+  educationInfo
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const viewPartner = partnersSection.display;
+  const viewPipeline = pipelineSection.display;
+  const viewTechnologies = technologiesSection.display;
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  // const viewBlog = blogSection.display;
-  // const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
+  const viewProjects = bigProjects.display;
+  const viewEducation = educationInfo.display;
 
   return (
     <div className="header-container">
@@ -44,19 +46,34 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+        {viewPartner && (
+            <li>
+              <a href="#partners">Partners</a>
+            </li>
+          )}
+          {viewPipeline && (
+            <li>
+              <a href="#pipeline">Pipeline</a>
+            </li>
+          )}
+          {viewTechnologies && (
+            <li>
+              <a href="#technolgies">Technolgies</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
             </li>
           )}
-          {viewExperience && (
+          {viewProjects && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
-          {viewOpenSource && (
+          {viewExperience && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#experience">Experiences</a>
             </li>
           )}
           {viewAchievement && (
@@ -64,19 +81,9 @@ function Header() {
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {/* {viewBlog && (
+          {viewEducation && (
             <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )} */}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
+              <a href="#education">Education</a>
             </li>
           )}
           <li>

@@ -566,7 +566,7 @@ const contactInfo = {
   title: emoji("Get in Touch ☎️"),
   subtitle:
     "Interested in learning more? Please reach out using Linkdin or my email below",
-  email_address: "cause.ag@gmail.com"
+  email_address: "causer.ag@gmail.com"
 };
 
 // Twitter Section
