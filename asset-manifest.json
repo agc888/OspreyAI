@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OspreyAI/static/css/main.e9c2d2d2.chunk.css",
+    "main.css": "/OspreyAI/static/css/main.0bc175f0.chunk.css",
     "main.js": "/OspreyAI/static/js/main.edc23e5d.chunk.js",
     "main.js.map": "/OspreyAI/static/js/main.edc23e5d.chunk.js.map",
     "runtime-main.js": "/OspreyAI/static/js/runtime-main.42af1342.js",
@@ -14,11 +14,11 @@
     "static/js/4.793a7b6e.chunk.js": "/OspreyAI/static/js/4.793a7b6e.chunk.js",
     "static/js/4.793a7b6e.chunk.js.map": "/OspreyAI/static/js/4.793a7b6e.chunk.js.map",
     "index.html": "/OspreyAI/index.html",
-    "precache-manifest.ccd50c63170bddb64aeeb028563d2eb2.js": "/OspreyAI/precache-manifest.ccd50c63170bddb64aeeb028563d2eb2.js",
+    "precache-manifest.c836908ffa44c2bcaeb8fcee6c367e0b.js": "/OspreyAI/precache-manifest.c836908ffa44c2bcaeb8fcee6c367e0b.js",
     "service-worker.js": "/OspreyAI/service-worker.js",
     "static/css/3.35bdca5f.chunk.css.map": "/OspreyAI/static/css/3.35bdca5f.chunk.css.map",
     "static/css/4.c49d51cd.chunk.css.map": "/OspreyAI/static/css/4.c49d51cd.chunk.css.map",
-    "static/css/main.e9c2d2d2.chunk.css.map": "/OspreyAI/static/css/main.e9c2d2d2.chunk.css.map",
+    "static/css/main.0bc175f0.chunk.css.map": "/OspreyAI/static/css/main.0bc175f0.chunk.css.map",
     "static/js/2.286aeb3f.chunk.js.LICENSE.txt": "/OspreyAI/static/js/2.286aeb3f.chunk.js.LICENSE.txt",
     "static/media/10674804.png": "/OspreyAI/static/media/10674804.7ef1529c.png",
     "static/media/10x_logo.png": "/OspreyAI/static/media/10x_logo.860b3c09.png",
@@ -67,7 +67,7 @@
   "entrypoints": [
     "static/js/runtime-main.42af1342.js",
     "static/js/2.286aeb3f.chunk.js",
-    "static/css/main.e9c2d2d2.chunk.css",
+    "static/css/main.0bc175f0.chunk.css",
     "static/js/main.edc23e5d.chunk.js"
   ]
 }
