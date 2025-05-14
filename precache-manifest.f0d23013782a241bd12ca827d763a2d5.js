@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d3ea322b5f4d9bcaa05fbf86baeb8ea",
+    "revision": "e0300dbb1b8029276c13e20373b7d79a",
     "url": "/OspreyAI/index.html"
   },
   {
-    "revision": "345418a9ae48790ff776",
+    "revision": "3e0cb1e6da591094227c",
     "url": "/OspreyAI/static/css/3.35bdca5f.chunk.css"
   },
   {
-    "revision": "c29776c14309b8759f31",
+    "revision": "2cea7283595869f55466",
     "url": "/OspreyAI/static/css/4.c49d51cd.chunk.css"
   },
   {
-    "revision": "d9884fbcc6a3b3afed9e",
+    "revision": "a0aaa02e4fd3f5c79783",
     "url": "/OspreyAI/static/css/main.f785d234.chunk.css"
   },
   {
-    "revision": "ce97301fea2a824b5457",
-    "url": "/OspreyAI/static/js/2.545bd326.chunk.js"
+    "revision": "23ece3d2fefa7866baee",
+    "url": "/OspreyAI/static/js/2.4465542a.chunk.js"
   },
   {
     "revision": "a6c0177ea3999624a9f2d92abf620885",
-    "url": "/OspreyAI/static/js/2.545bd326.chunk.js.LICENSE.txt"
+    "url": "/OspreyAI/static/js/2.4465542a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "345418a9ae48790ff776",
-    "url": "/OspreyAI/static/js/3.0308e234.chunk.js"
+    "revision": "3e0cb1e6da591094227c",
+    "url": "/OspreyAI/static/js/3.4d664965.chunk.js"
   },
   {
-    "revision": "c29776c14309b8759f31",
-    "url": "/OspreyAI/static/js/4.55380e63.chunk.js"
+    "revision": "2cea7283595869f55466",
+    "url": "/OspreyAI/static/js/4.793a7b6e.chunk.js"
   },
   {
-    "revision": "d9884fbcc6a3b3afed9e",
-    "url": "/OspreyAI/static/js/main.9bf9a37e.chunk.js"
+    "revision": "a0aaa02e4fd3f5c79783",
+    "url": "/OspreyAI/static/js/main.1072232d.chunk.js"
   },
   {
-    "revision": "9f1360d1ae91b77d6051",
-    "url": "/OspreyAI/static/js/runtime-main.c279df8b.js"
+    "revision": "976a9490a47b1e4d021c",
+    "url": "/OspreyAI/static/js/runtime-main.4f890310.js"
   },
   {
     "revision": "7ef1529c20ee4bcd0829040fd5851aa3",
