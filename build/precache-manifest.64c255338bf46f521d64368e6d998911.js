@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8127d57730a2e82a562ea141b83d16f3",
+    "revision": "3f999efcc6cee40f8cc615018d80ee3a",
     "url": "/OspreyAI/index.html"
   },
   {
-    "revision": "732d17117b49e1632f3b",
+    "revision": "5720e028bbbe30100862",
     "url": "/OspreyAI/static/css/3.35bdca5f.chunk.css"
   },
   {
-    "revision": "2cea7283595869f55466",
+    "revision": "7e68cb47f7d7668586e5",
     "url": "/OspreyAI/static/css/4.c49d51cd.chunk.css"
   },
   {
-    "revision": "88940e64159ba6a9a07f",
-    "url": "/OspreyAI/static/css/main.0bc175f0.chunk.css"
+    "revision": "3bd1ebdd15010548109a",
+    "url": "/OspreyAI/static/css/main.4af80c0d.chunk.css"
   },
   {
-    "revision": "ee2a39f79bbf1e3c047f",
-    "url": "/OspreyAI/static/js/2.286aeb3f.chunk.js"
+    "revision": "94b9fca233f646423588",
+    "url": "/OspreyAI/static/js/2.bc04dd3d.chunk.js"
   },
   {
     "revision": "a6c0177ea3999624a9f2d92abf620885",
-    "url": "/OspreyAI/static/js/2.286aeb3f.chunk.js.LICENSE.txt"
+    "url": "/OspreyAI/static/js/2.bc04dd3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "732d17117b49e1632f3b",
-    "url": "/OspreyAI/static/js/3.3300ab8c.chunk.js"
+    "revision": "5720e028bbbe30100862",
+    "url": "/OspreyAI/static/js/3.7f9e3e02.chunk.js"
   },
   {
-    "revision": "2cea7283595869f55466",
-    "url": "/OspreyAI/static/js/4.793a7b6e.chunk.js"
+    "revision": "7e68cb47f7d7668586e5",
+    "url": "/OspreyAI/static/js/4.6d9d4ae1.chunk.js"
   },
   {
-    "revision": "88940e64159ba6a9a07f",
-    "url": "/OspreyAI/static/js/main.edc23e5d.chunk.js"
+    "revision": "3bd1ebdd15010548109a",
+    "url": "/OspreyAI/static/js/main.2052a874.chunk.js"
   },
   {
-    "revision": "73568a89bd2ced38d9ac",
-    "url": "/OspreyAI/static/js/runtime-main.42af1342.js"
+    "revision": "9b955773f84064ace261",
+    "url": "/OspreyAI/static/js/runtime-main.6d359549.js"
   },
   {
     "revision": "7ef1529c20ee4bcd0829040fd5851aa3",
@@ -198,10 +198,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3c26d9be14254114a41766ca8b6de127",
     "url": "/OspreyAI/static/media/scST.3c26d9be.png"
-  },
-  {
-    "revision": "3440939881da8339d1597e8d77cdf850",
-    "url": "/OspreyAI/static/media/skill.34409398.svg"
   },
   {
     "revision": "e0c7400d5c54e79ab201306de43cff88",

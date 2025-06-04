@@ -479,7 +479,7 @@ const achievementSection = {
         footerLink: [
           {
             name: "Tutorial",
-            url: "/documents/Tutorial.html",
+            url: "/OspreyAI/documents/Tutorial.html",
             isDownloadable: true,
             downloadName: "Andrew_Causer_Tutorial.html"
           }
