@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e93d9786dc1e6490fe270b1b8707c7ab",
+    "revision": "3f999efcc6cee40f8cc615018d80ee3a",
     "url": "/OspreyAI/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OspreyAI/static/css/4.c49d51cd.chunk.css"
   },
   {
-    "revision": "5ba519fc4f0b7d181efa",
+    "revision": "3bd1ebdd15010548109a",
     "url": "/OspreyAI/static/css/main.4af80c0d.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OspreyAI/static/js/4.6d9d4ae1.chunk.js"
   },
   {
-    "revision": "5ba519fc4f0b7d181efa",
-    "url": "/OspreyAI/static/js/main.24b2b4e2.chunk.js"
+    "revision": "3bd1ebdd15010548109a",
+    "url": "/OspreyAI/static/js/main.2052a874.chunk.js"
   },
   {
     "revision": "9b955773f84064ace261",
