@@ -17,12 +17,11 @@ function Header() {
   const {isDark} = useContext(StyleContext);
   const viewPartner = partnersSection.display;
   const viewPipeline = pipelineSection.display;
-  const viewTechnologies = technologiesSection.display;
+  const viewTechnologiesSection = technologiesSection.display;
   const viewExperience = workExperiences.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewProjects = bigProjects.display;
-  const viewEducation = educationInfo.display;
 
   return (
     <div className="header-container">
@@ -56,9 +55,9 @@ function Header() {
               <a href="#pipeline">Pipeline</a>
             </li>
           )}
-          {viewTechnologies && (
+          {viewTechnologiesSection && (
             <li>
-              <a href="#technolgies">Technolgies</a>
+              <a href="#technolgies">TechnolgiesSection</a>
             </li>
           )}
           {viewSkills && (
@@ -79,11 +78,6 @@ function Header() {
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          {viewEducation && (
-            <li>
-              <a href="#education">Education</a>
             </li>
           )}
           <li>
