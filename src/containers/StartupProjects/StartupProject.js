@@ -3,6 +3,7 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import PublicationsList from "../publicationsList/PublicationsList";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -87,6 +88,9 @@ export default function StartupProject() {
               );
             })}
           </div>
+
+          {/* Publications list below project cards */}
+          <PublicationsList />
         </div>
       </div>
     </Fade>

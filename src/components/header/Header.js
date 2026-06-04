@@ -10,14 +10,13 @@ import {
   skillsSection,
   bigProjects,
   achievementSection,
-  educationInfo
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewPartner = partnersSection.display;
   const viewPipeline = pipelineSection.display;
-  const viewTechnologiesSection = technologiesSection.display;
+  const viewTechnologies = technologiesSection.display;
   const viewExperience = workExperiences.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
@@ -55,9 +54,9 @@ function Header() {
               <a href="#pipeline">Pipeline</a>
             </li>
           )}
-          {viewTechnologiesSection && (
+          {viewTechnologies && (
             <li>
-              <a href="#technolgies">TechnolgiesSection</a>
+              <a href="#technologies">Technolgies</a>
             </li>
           )}
           {viewSkills && (

@@ -24,12 +24,12 @@ const illustration = {
 const greeting = {
   title: (
     <>
-      <span className="bold-text">OspreyAI: </span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI</span>
+      <span className="bold-text">OspreyAI</span>
     </>
   ),
   subTitle: (
     <>
-    <span className="bold-text">Welcome to OspreyAI </span>— a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a strong foundation in clinical pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial, molecular and histological imaging data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — <span className="bold-text"> together, we can drive the future of healthcare innovation.</span>
+    <span className="bold-text">Welcome to OspreyAI (</span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI)</span> — a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a strong foundation in clinical pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial, molecular and histological imaging data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — <span className="bold-text"> together, we can drive the future of healthcare innovation.</span>
     </>
   ),
   resumeLink:
@@ -79,6 +79,11 @@ const partnersSection = {
       name: "QIMR Berghofer",
       lightLogo: require("./assets/images/brand-logos/QIMRB.png"),
       darkLogo: require("./assets/images/brand-logos/QIMRB_dark.png")
+    },
+    {
+      name: "Griffith University",
+      lightLogo: require("./assets/images/brand-logos/griffith_light.png"),
+      darkLogo: require("./assets/images/brand-logos/griffith_dark.png")
     },
     {
       name: "Genomics Machine Learning Group",
@@ -164,11 +169,12 @@ const technologiesSection = {
       platforms: ["Akoya Biosciences"] // No logos (can be updated if needed)
     },
     {
-      name: "Spatial Metabolomics",
+      name: "Spatial Metabolomics and Glycomics",
       image: require("./assets/images/skill-logos/sm.png"),
-      description: "Spatial Metabolomics combines advanced mass spectrometry with imaging techniques to map metabolites directly within tissue sections. This technology provides insights into metabolic heterogeneity across tissues, revealing how metabolic processes are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.These datasets contain huge levels of data and require specialised packages to handle this. These packages contain analyses such as:",
+      description: "Spatial Metabolomics and Spatial Glycomics combines advanced mass spectrometry with imaging techniques to map analytes directly within tissue sections. This technology provides insights into metabolic/glycan heterogeneity across tissues, revealing how metabolic processes and glycosylation events are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics and Glycomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.These datasets contain huge levels of data and require specialised packages to handle this. These packages contain analyses such as:",
       bulletPoints:[
         "Metabolite Annotation",
+        "Glycan Identification",
         "Shrunken Spatial Centroid Analysis",
         "Metabolic Pathway Analysis"
       ],
@@ -432,6 +438,17 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/goatpy_logo.png"),
+      projectName: "goatpy python Package",
+      projectDesc: "New Spatial Glycomics Analysis Toolkit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://goatpy.readthedocs.io/en/latest/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/hnc.webp"),
       projectName: "Nature Precision Oncology",
       projectDesc: "Deep spatial-omics analysis of Head & Neck carcinomas provides alternative therapeutic targets and rationale for treatment failure.",
@@ -578,6 +595,83 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
+/* ADD this to your portfolio.js — paste it before the export block at the bottom */
+
+const recentUpdates = {
+  display: true,
+  updates: [
+    {
+      date: "Jan 2026",
+      type: "news",
+      description: "SpaMTP R package v1.2 released with improved metabolite annotation and spatial trajectory analysis modules.",
+      url: "https://genomicsmachinelearning.github.io/SpaMTP/",
+      urlLabel: "View package"
+    },
+    {
+      date: "Dec 2024",
+      type: "talk",
+      description: "Presented spatial proteomics findings at the Brisbane Cancer Conference 2025.",
+    },
+    {
+      date: "Sep 2023",
+      type: "publication",
+      description: "New paper published in Nature Precision Oncology on spatial multi-omics integration in head and neck cancer.",
+      url: "https://www.nature.com/articles/s41698-023-00444-2",
+      urlLabel: "Read paper"
+    }
+  ]
+};
+
+/* ADD this to your portfolio.js — paste it near the bigProjects section */
+
+const publicationsSection = {
+  display: true,
+  title: "All Publications",
+  subtitle: "Peer-reviewed research and pre-prints",
+  publications: [
+     {
+      authors: "Pavilion, G., Vu, H., Xiong, Z., Dang, T.V.T., O'Brien, B., Walsh, M., Causer, A., Chandra, J., Nguyen, Q. and Frazer, I.H.",
+      title: "Spatial analysis of HPV-associated cervical intraepithelial neoplastic tissues demonstrate distinct immune signatures associated with cervical cancer progression",
+      journal: "Pathology",
+      year: "2026",
+      volume: "Vol. 268: 200-214",
+      doi: "https://doi.org/10.1002/path.70002"
+    },
+    {
+      authors: "Y.-C. Kao, K. J. Lee, C. Zhou, A. Causer, H. Oey, K. Khosrotehrani, et al.",
+      title: "A tissue multiplexing approach to maximise spatial transcriptomics output from precious pathology specimens",
+      journal: "bioRxiv",
+      year: "2025",
+      doi: "https://doi.org/10.1101/2025.02.06.25321364"
+    },
+    {
+      authors: "A. Causer, T. Lu, C. Fitzgerald, A. Newman, H. Vu, X. Tan, et al.",
+      title: "SpaMTP: Integrative Statistical Analysis and Visualisation of Spatial Metabolomics and Transcriptomics data",
+      journal: "bioRxiv",
+      year: "2025",
+      doi: "https://doi.org/10.1101/2024.10.31.621429"
+    },
+    {
+      authors: "Vu H, Sun Y, Xiong Z, Tan X, Radford-Smith D, Causer A, Dickens AM, Hyötyläinen T, Evstafev I, Oresic M, Nefzger C, O'Sullivan ED, Watt MJ, Ramm GA, Clouston A, Irvine KM, Nguyen QH, Powell EE",
+      title: "Progressive fibrosis in human MASLD is associated with spatially linked transcriptomic signatures of metabolic reprogramming and senescence",
+      journal: "npj Precision Oncology",
+      year: "2025",
+      volume: "Vol. 8",
+      doi: "https://doi.org/10.1016/j.jhepr.2025.101657"
+    },
+    {
+      authors: "Causer, A., Tan, X., Lu, X. et al.",
+      title: "Deep spatial-omics analysis of Head & Neck carcinomas provides alternative therapeutic targets and rationale for treatment failure",
+      journal: "npj Precision Oncology",
+      year: "2023",
+      volume: "Vol. 7, Article 89",
+      doi: "https://doi.org/10.1038/s41698-023-00444-2"
+    }
+  ]
+};
+
+
+
 // Don't forget to add the new section to your export
 export {
   illustration,
@@ -600,5 +694,7 @@ export {
   resumeSection,
   partnersSection,
   technologiesSection,
-  pipelineSection
+  pipelineSection,
+  recentUpdates,
+  publicationsSection
 };
