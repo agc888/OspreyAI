@@ -29,7 +29,7 @@ const greeting = {
   ),
   subTitle: (
     <>
-    <span className="bold-text">Welcome to OspreyAI (</span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI)</span> — a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a strong foundation in clinical pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming how we understand and treat diseases. From decoding intricate tissue architecture to developing integrative models that merge spatial, molecular and histological imaging data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — <span className="bold-text"> together, we can drive the future of healthcare innovation.</span>
+    <span className="bold-text">Welcome to OspreyAI (</span><span className="bold-text">O</span>mic & <span className="bold-text">S</span>patial <span className="bold-text">P</span>athology <span className="bold-text">R</span>esearch <span className="bold-text">E</span>mpowered b<span className="bold-text">y AI)</span> — a portfolio and innovation hub that highlights my journey and expertise in the fields of spatial omics and computational biology. With a strong foundation in clinical pathology and a deep passion for advancing the intersection of artificial intelligence and spatial technologies, OspreyAI reflects my dedication to transforming the way we understand and treat disease. From decoding intricate tissue architecture to developing integrative models that merge spatial, molecular and histological imaging data, my goal is to push the frontiers of precision medicine and contribute to a future where diagnostic and therapeutic strategies are increasingly precise, data-driven, and tailored to individual patient needs. A key aspect of my journey is my passion for knowledge-sharing, teaching, and learning from others who are equally enthusiastic about this rapidly evolving field. I encourage you to reach out and share your insights — <span className="bold-text"> together, we can drive the future of healthcare innovation.</span>
     </>
   ),
   resumeLink:
@@ -104,14 +104,14 @@ const pipelineSection = {
   beforeDescription: (
     <>
       <p>
-      Following this standard bioinformatic pipeline, we can implment downstream methods and tools to uncover a deeper understand of biology. These are just some of the many different analyses and packages I have used for analysing all types of biological data.
+      Following this standard bioinformatic pipeline, we can implement downstream methods and tools to uncover a deeper understanding of biology. These are just some of the many different analyses and packages I have used for analysing many types of biological data.
       </p>
     </>
   ),
   afterDescription: (
     <>
       <p>
-      Often there are analyses specific to the technology type or platform being used. Some of the most common and novel techniques I have previously implment are listed below in the 'Technolgies Section'.    
+      Often there are analyses specific to the technology type or platform being used. Some of the most common and novel techniques I have previously implemented are listed below in the 'Technologies' section.   
       </p>
     </>
   )
@@ -128,17 +128,17 @@ const technologiesSection = {
       description: "Single-cell RNA sequencing allows for the profiling of gene expression at the individual cell level, revealing cellular heterogeneity and rare cell populations that would be masked in bulk sequencing approaches. This technology enables the discovery of new cell types, mapping of cellular differentiation trajectories, and understanding of complex tissue microenvironments. Data generated from this analysis is generally in the form of a large sparse counts matrix which must be heavily scrutinised to ensure all technical variation is removed. In addition to the standard bioinformatics pipeline mentioned above, some of the key analyses I always perform when analysing scRNA-seq include:",
       bulletPoints:[
         "Doublet Removal",
-        "Robust Cell Tying",
+        "Robust Cell Typing",
         "Trajectory Analysis",
         "Pathway Enrichment Analysis",
-        "Infered Copy Number Variations"
+        "Inferred Copy Number Variations"
       ],
       platforms: ["10X Genomics"] // Only 10X Genomics logo
     },
     {
       name: "Whole Transcriptome Spatial Transcriptomics",
       image: require("./assets/images/skill-logos/spotST.png"),
-      description: "Whole Transcriptome Spatial Transcriptomics (ST) provides comprehensive gene expression profiling while preserving spatial context within tissue samples. This technology captures the entire transcriptome at near-cellular resolution (spot level: ~2-10 cells), enabling the visualisation of complex spatial gene expression patterns and identification of region-specific molecular signatures in tissues. This data often produces a counts matrix where each barcoded spot contains spatial coordinates. Compared to scRNA-seq data, the ST data structure contains it’s own set of challenges when ensuring high quality data. With the addition of spatial coordinates there various analyses we can perform to extract deeper information about tissue microenvironments. Some of my favourites include:",
+      description: "Whole Transcriptome Spatial Transcriptomics (ST) provides comprehensive gene expression profiling while preserving spatial context within tissue samples. This technology captures the entire transcriptome at near-cellular resolution (spot level: ~2-10 cells), enabling the visualisation of complex spatial gene expression patterns and identification of region-specific molecular signatures in tissues. This data often produces a counts matrix where each barcoded spot contains spatial coordinates. Compared to scRNA-seq data, the ST data structure contains its own set of challenges when ensuring high quality data. With the addition of spatial coordinates there are various analyses we can perform to extract deeper information about tissue microenvironments. Some of my favourites include:",
       bulletPoints:[
         "Deconvolution",
         "Cell-Cell Interaction",
@@ -150,7 +150,7 @@ const technologiesSection = {
     {
       name: "Single-cell Spatial Transcriptomics",
       image: require("./assets/images/skill-logos/scST.png"),
-      description: "Single-cell Spatial Transcriptomics combines the resolution of single-cell RNA sequencing with spatial information, allowing researchers to map gene expression at the individual cell level within the tissue architecture. This powerful approach bridges the gap between traditional histology and genomics, providing unprecedented insights into cellular organisation, cell-cell interactions, and tissue microenvironments. Although this data contains fewer genes compared to spot level ST datasets, they are often much larger consisting of over 100,000 cells. With this brings new methods to leverage such data including:",
+      description: "Single-cell Spatial Transcriptomics combines the resolution of single-cell RNA sequencing with spatial information, allowing researchers to map gene expression at the individual cell level within the tissue architecture. This powerful approach bridges the gap between traditional histology and genomics, providing unprecedented insights into cellular organisation, cell-cell interactions, and tissue microenvironments. Although these datasets contain fewer genes than spot-level ST datasets, they are often much larger consisting of over 100,000 cells. With this brings new methods to leverage such data including:",
       bulletPoints:[
         "Cell Label Transfer",
         "Neighbourhood Niche Analysis"
@@ -160,10 +160,10 @@ const technologiesSection = {
     {
       name: "Single-Cell Spatial Proteomics",
       image: require("./assets/images/skill-logos/Codex.png"),
-      description: "Spatial Proteomics technologies enable the visualisation and quantification of proteins while preserving spatial context within tissue samples. Using multiplexed immunofluorescence and advanced imaging techniques, these platforms can simultaneously detect dozens of protein markers at subcellular resolution, providing deep insights into cell phenotypes, signaling networks, and protein-protein interactions within their native tissue environment. This generated data is distinctly different from most spatial transcriptomics datasets, and with this requires optimised methods for extracting biological information. Some of these include:",
+      description: "Spatial Proteomics technologies enable the visualisation and quantification of proteins while preserving spatial context within tissue samples. Using multiplexed immunofluorescence and advanced imaging techniques, these platforms can simultaneously detect dozens of protein markers at subcellular resolution, providing deep insights into cell phenotypes, signaling networks, and protein-protein interactions within their native tissue environment. The data generated are distinctly different from most spatial transcriptomics datasets and therefore require optimised methods for extracting biological information. Some of these include:",
       bulletPoints:[
         "Geometric Mean Based Cell Typing",
-        "Protein-Protien Interaction Analysis",
+        "Protein-Protein Interaction Analysis",
         "Differential Intensity Analysis"
       ],
       platforms: ["Akoya Biosciences"] // No logos (can be updated if needed)
@@ -171,7 +171,7 @@ const technologiesSection = {
     {
       name: "Spatial Metabolomics and Glycomics",
       image: require("./assets/images/skill-logos/sm.png"),
-      description: "Spatial Metabolomics and Spatial Glycomics combines advanced mass spectrometry with imaging techniques to map analytes directly within tissue sections. This technology provides insights into metabolic/glycan heterogeneity across tissues, revealing how metabolic processes and glycosylation events are spatially organized and how they relate to tissue function and disease states. Spatial metabolomics and Glycomics adds another critical layer to our understanding of tissue biology beyond genes and proteins.These datasets contain huge levels of data and require specialised packages to handle this. These packages contain analyses such as:",
+      description: "Spatial Metabolomics and Spatial Glycomics combines advanced mass spectrometry with imaging techniques to map analytes directly within tissue sections. This technology provides insights into metabolic/glycan heterogeneity across tissues, revealing how metabolic processes and glycosylation events are spatially organised and how they relate to tissue function and disease states. Spatial metabolomics and glycomics add another critical layer to our understanding of tissue biology beyond genes and proteins. These datasets contain huge levels of data and require specialised packages to handle this. These packages contain analyses such as:",
       bulletPoints:[
         "Metabolite Annotation",
         "Glycan Identification",
@@ -237,7 +237,7 @@ const skillsSection = {
     ),
     emoji("⚡ Implement and deploy machine learning models for integrating and analysing spatial omics and biological imaging datasets"),
     emoji(
-      "⚡ Proficient in repository management and version control, highperformance computing, and cloud computing"
+      "⚡ Proficient in repository management and version control, high-performance computing, and cloud computing"
     )
   ],
   softwareSkills: [
@@ -313,13 +313,13 @@ const educationInfo = {
     {
       schoolName: "University of Queensland ",
       logo: require("./assets/images/UQ.png"),
-      subHeader: "Master of Bioinfomatics (Research Extensive)",
+      subHeader: "Master of Bioinformatics (Research Extensive)",
       duration: "Jan 2021 - Nov 2022",
-      desc: "Developed computational skills and critical biological data analysis skiils.",
+      desc: "Developed computational skills and critical biological data analysis skills.",
       descBullets: [
         "GPA: 6.94/7.0",
         "Publication in Nature Precision Oncology IF: 7.9 (2022)",
-        "Thesis project involves the integration of multiomics datasets (Spatial Transcriptomics, Spatial Proteomics) from human head and neck cancer patients in-order to distinguish heterogeneity between patients to assess statistical performance of multiomics integration, and identify drug targets for immunotherapies",
+        "Thesis project involves the integration of multiomics datasets (Spatial Transcriptomics, Spatial Proteomics) from human head and neck cancer patients in order to distinguish heterogeneity between patients to assess statistical performance of multiomics integration, and identify drug targets for immunotherapies",
         "Presented at the CellOmics Innovation Forum and the MultiOmics 2022 Conference"
       ]
     },
@@ -352,11 +352,11 @@ const techStack = {
       progressPercentage: "100%"
     },
     {
-      Stack: "Project Managment",
+      Stack: "Project Management",
       progressPercentage: "100%"
     },
     {
-      Stack: "Machine Learnign/Digital Pathology",
+      Stack: "Machine Learning/Digital Pathology",
       progressPercentage: "80%"
     },
     {
@@ -379,8 +379,8 @@ const workExperiences = {
       date: "Aug 2023 – Present",
       desc: "Leveraging spatial-omic technologies and deep learning methodologies to analyse various complex diseases, including unravelling intricate biological mechanisms associated with diverse tumour micro-environments",
       descBullets: [
-        "Strong background in research projects (start-to-end) involing all major spatial omics technolgies",
-        "Project managment with major industry partners including Sullivan Nicolaides Pathology and Pfizer",
+        "Strong background in research projects (start-to-end) involving all major spatial omics technologies",
+        "Project management with major industry partners including Sullivan Nicolaides Pathology and Pfizer",
         "Mentoring and managing staff including PhD/Honours students and external collaborators",
         "Numerous oral and poster presentations at conferences including the Brisbane Cancer Conference, Multi-Omics and 10X User Meeting"
       ]
@@ -392,9 +392,9 @@ const workExperiences = {
       date: "Jan 2021 – March 2023",
       desc: "Performed routine histology on thousands of patient samples",
       descBullets: [
-        "Key clinical histolgoy skills such as embedding, microtomy and H&E staining",
-        "Handled a diverse range of complex human specimen",
-        "Performed efficiently to produce high quality outputs in high pace work environment"
+        "Key clinical histology skills such as embedding, microtomy and H&E staining",
+        "Handled a diverse range of complex human specimens",
+        "Worked efficiently to produce high-quality outputs in a fast-paced work environment"
       ] 
     },
     {
@@ -402,10 +402,10 @@ const workExperiences = {
       company: "Max Kelsen",
       companylogo: require("./assets/images/MK.png"),
       date: "March 2023 – May 2023",
-      desc: "Implemented various machine learning techniques on cancer clinical trail datasets.",
+      desc: "Implemented various machine learning techniques on cancer clinical trial datasets.",
       descBullets: [
         "Developed skills in manipulating machine learning models to apply to medical datasets",
-        "Familar with cloud computing platfroms such as Google"
+        "Familiar with cloud computing platforms such as Google"
       ]
 
      }
@@ -424,7 +424,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "Some key milestones and projects i have been involved with",
+  subtitle: "Some key milestones and projects I have been involved with",
   projects: [
     {
       image: require("./assets/images/spamtp.png"),
@@ -504,7 +504,7 @@ const achievementSection = {
       },
       {
         title: "Deep Learning Specialisation Certification",
-        subtitle: "Completed certifcation from DeepLearning.AI in convolutional neural networks and deep learning",
+        subtitle: "Completed certification from DeepLearning.AI in convolutional neural networks and deep learning",
         image: require("./assets/images/deeplearning.webp"),
         imageAlt: "DeepLearning.AI logo",
         footerLink: [
@@ -582,7 +582,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Get in Touch ☎️"),
   subtitle:
-    "Interested in learning more? Please reach out using Linkdin or my email below",
+    "Interested in learning more? Please reach out using LinkedIn or my email below",
   email_address: "causer.ag@gmail.com"
 };
 
@@ -608,7 +608,7 @@ const recentUpdates = {
       urlLabel: "View package"
     },
     {
-      date: "Dec 2024",
+      date: "Dec 2025",
       type: "talk",
       description: "Presented spatial proteomics findings at the Brisbane Cancer Conference 2025.",
     },
