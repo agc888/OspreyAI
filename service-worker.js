@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/OspreyAI/precache-manifest.3bfd2bd0f78a054da2b3fde8324af3ca.js"
+  "/OspreyAI/precache-manifest.b18ff9fa6e4a200ec8b092f18a32c875.js"
 );
 
 self.addEventListener('message', (event) => {

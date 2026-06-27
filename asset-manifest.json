@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/OspreyAI/static/css/main.543125b2.chunk.css",
-    "main.js": "/OspreyAI/static/js/main.6395c2b4.chunk.js",
-    "main.js.map": "/OspreyAI/static/js/main.6395c2b4.chunk.js.map",
+    "main.js": "/OspreyAI/static/js/main.bcaa9a58.chunk.js",
+    "main.js.map": "/OspreyAI/static/js/main.bcaa9a58.chunk.js.map",
     "runtime-main.js": "/OspreyAI/static/js/runtime-main.c71771c9.js",
     "runtime-main.js.map": "/OspreyAI/static/js/runtime-main.c71771c9.js.map",
     "static/js/2.0e94ec38.chunk.js": "/OspreyAI/static/js/2.0e94ec38.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/4.6bc3e04c.chunk.js": "/OspreyAI/static/js/4.6bc3e04c.chunk.js",
     "static/js/4.6bc3e04c.chunk.js.map": "/OspreyAI/static/js/4.6bc3e04c.chunk.js.map",
     "index.html": "/OspreyAI/index.html",
-    "precache-manifest.3bfd2bd0f78a054da2b3fde8324af3ca.js": "/OspreyAI/precache-manifest.3bfd2bd0f78a054da2b3fde8324af3ca.js",
+    "precache-manifest.b18ff9fa6e4a200ec8b092f18a32c875.js": "/OspreyAI/precache-manifest.b18ff9fa6e4a200ec8b092f18a32c875.js",
     "service-worker.js": "/OspreyAI/service-worker.js",
     "static/css/3.35bdca5f.chunk.css.map": "/OspreyAI/static/css/3.35bdca5f.chunk.css.map",
     "static/css/4.c49d51cd.chunk.css.map": "/OspreyAI/static/css/4.c49d51cd.chunk.css.map",
@@ -70,6 +70,6 @@
     "static/js/runtime-main.c71771c9.js",
     "static/js/2.0e94ec38.chunk.js",
     "static/css/main.543125b2.chunk.css",
-    "static/js/main.6395c2b4.chunk.js"
+    "static/js/main.bcaa9a58.chunk.js"
   ]
 }
